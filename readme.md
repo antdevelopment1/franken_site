@@ -9,4 +9,7 @@
 - About Me
 - Projects
 
-## Hey
+## Techniques
+- Chrome Dev Tools
+- Linking CSS files
+  - normalize.css (which is kind of a "CSS Reset file")
