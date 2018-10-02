@@ -1,6 +1,12 @@
 /* h1  */
-.logo-text {
-    color: rgba(197, 33, 33, .9);
+header-text {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo-text {
+    color: rgba(0, 0, 0, .5);
     font-size: 18px;
+}
+.nav-link {
+    color: rgba(0, 0, 0, .5);
+    text-decoration: none;
 }
