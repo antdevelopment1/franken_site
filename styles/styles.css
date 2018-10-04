@@ -1,3 +1,14 @@
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1.7);
+    }
+}
 html, body {
     padding: 0;
     margin: 0;
@@ -73,7 +84,8 @@ body {
     margin: 0 auto;
     text-align: justify;
     line-height: 25px;
-    padding: 15px 20px 0 20px;
+    padding: 10px 20px 0 20px;
+    
 }
 .profile-image {
     width: 250px;
@@ -104,7 +116,8 @@ body {
     color: white;
     margin: 0 8px;
     font-size: 25px;
-    transition: font-size .5s;
+    /* transition: transform .25s ease-in-out .1s; */
+    
 }
 .contact-links a:hover {
     cursor: pointer;
@@ -114,7 +127,12 @@ body {
 .contact-links a:active .fab,
 .contact-links a:active .fas {
     color: gray;
-    font-size: 48px;
+    /* font-size: 48px; */
+    /* transform: scale(1.7); */
+    animation-name: zoom;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+
 }
 
 /* common “breakpoints” (ish)
@@ -127,5 +145,4 @@ think of s, m, l, xl, hugenormous
 */
 @media screen and (max-width: 500px) {
     
-  }
-and then we used 500, 700, 900? */
+}
