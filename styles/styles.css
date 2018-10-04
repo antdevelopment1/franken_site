@@ -24,6 +24,8 @@ body {
 
 .container {
    display: inline-block;
+   display: flex;
+   justify-content: center;
    /* outline: 1px solid blue; */
 }
 
@@ -32,6 +34,7 @@ body {
    color: rgba(0,0,0,.5);
    text-decoration: none;
    margin-right: 8px;
+   margin-bottom: 8px;
 }
 .hero-image {
     background-image:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(../images/animal-photography-daylight-elephant-247431.jpg);
@@ -46,10 +49,10 @@ body {
 .hero-image h2 {
     font-family: 'Mali', cursive;
     color: rgba(245, 245, 239, .9);
-    /* outline: 1px solid red; */
+    font-size: 30px;
     position: absolute;
-    top: 500px;
-    left: 1350px;
+    top: 160px;
+    /* outline: 1px solid red; */
 
 }
 /* Flexbox!!! Aw yeah */
@@ -61,31 +64,68 @@ body {
 .about-me {
     padding: 0 8px;
 }
+.about-me h3 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
 .about-me p {
     margin: 0 auto;
+    text-align: justify;
+    line-height: 25px;
+    padding: 15px 20px 0 20px;
 }
 .profile-image {
-    width: 150px;
+    width: 250px;
     margin: 0 auto;
 }
 .profile-image img {
     width: 100%;
     border-radius: 50%;
+    margin: 30px 0 40px 0;
+}
+.profile-image img:hover {
+    cursor: pointer;
 }
 .contact-links{
     background-color: rgba(0, 0, 0, 0.7);
     padding: 8px 12px;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-links i {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
     color: rgba(255, 255, 255, 0.7);
-    padding: 18px 12px;
+    padding: 15px 10px;
 }
 
-.contact_links fab {
-    font-size: 36px;
+.contact-links .fab,
+.contact-links .fas {
+    color: white;
     margin: 0 8px;
+    font-size: 25px;
+    transition: font-size .5s;
 }
+.contact-links a:hover {
+    cursor: pointer;
+}
+.contact-links a:hover .fab,
+.contact-links a:hover .fas,
+.contact-links a:active .fab,
+.contact-links a:active .fas {
+    color: gray;
+    font-size: 48px;
+}
+
+/* common “breakpoints” (ish)
+think of s, m, l, xl, hugenormous
+500px
+768px
+1024px
+1200px
+1400px
+*/
+@media screen and (max-width: 500px) {
+    
+  }
+and then we used 500, 700, 900? */
