@@ -12,8 +12,7 @@ body {
     padding: 0 8px;
 }
 
-.logo-text
-{
+.logo-text {
    color: rgba(0,0,0, .9);
    font-size: 18px;
    display: inline-block;
@@ -36,10 +35,10 @@ body {
 }
 .hero-image {
     background-image:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(../images/animal-photography-daylight-elephant-247431.jpg);
-    min-height: 1000px;
+    min-height: 600px;
     min-width: 100%;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     font-family: 'Mali', cursive;
     font-size: 30px;
@@ -59,10 +58,34 @@ body {
     justify-content: center;
     align-items: center;
 }
+.about-me {
+    padding: 0 8px;
+}
+.about-me p {
+    margin: 0 auto;
+}
 .profile-image {
-    width: 300px;
+    width: 150px;
+    margin: 0 auto;
 }
 .profile-image img {
     width: 100%;
     border-radius: 50%;
+}
+.contact-links{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8px 12px;
+}
+
+.contact-links i {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 18px 12px;
+}
+
+.contact_links fab {
+    font-size: 36px;
+    margin: 0 8px;
 }
